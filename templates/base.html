@@ -2,9 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Base</title>
+    <title>Sun and Nature</title>
+    <link rel="stylesheet" href="../static/style.css">
 </head>
 <body>
+<div class="cabeçalho">
+    <h2> 𝓢𝓾𝓷 𝓪𝓷𝓭 𝓝𝓪𝓽𝓾𝓻𝓮 𝓒𝓸𝓻𝓹 | 𝓖𝓮𝓼𝓽𝓪̃𝓸 𝓘𝓷𝓽𝓮𝓻𝓷𝓪 </h2>
+</div>
+
+<h3>
+    <div class="navegador">
+        <a href="{{ url_for('inicio') }}">Início</a>
+        <a href="{{ url_for('clientes') }}">Clientes</a>
+        <a href="{{url_for('equipamentos')}}">Equipamentos</a>
+        <a href="{{url_for('servicos')}}"> Serviços </a>
+    </div>
+</h3>
+
+<div class="conteudo">
+    {% block conteudo %}
+    {% endblock conteudo %}
+</div>
+
+
+
 
 </body>
 </html>
